@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Барбершоп «EXCLUSIVA»</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <img src="./icons/logo-barber.svg"
+      width="141"
+      height="31"
+      alt="ЛОГОТИП" class="logo__img">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Главная</a>
+      <a href="#servicos">Услуги</a>
+      <a href="#barbeiros">Барберы</a>
+      <a href="#galeria">Галерея</a>
+      <a href="#contato">Контакты</a>
+    </nav>
+    <a href="#agendar" class="btn btn--outline">
+      Записаться
+      <svg class="icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0.625 4.08333H11.125M2.95833 0V1.16667M8.79167 0V1.16667M2.49167 10.5H9.25833C9.91172 10.5 10.2385 10.5 10.488 10.3728C10.7075 10.261 10.886 10.0825 10.9978 9.863C11.125 9.61345 11.125 9.28672 11.125 8.63333V3.03333C11.125 2.37994 11.125 2.05324 10.9978 1.80368C10.886 1.58415 10.7075 1.40568 10.488 1.29383C10.2385 1.16667 9.91172 1.16667 9.25833 1.16667H2.49167C1.83827 1.16667 1.51157 1.16667 1.26201 1.29383C1.04249 1.40568 0.864009 1.58415 0.752161 1.80368C0.625 2.05324 0.625 2.37994 0.625 3.03333V8.63333C0.625 9.28672 0.625 9.61345 0.752161 9.863C0.864009 10.0825 1.04249 10.261 1.26201 10.3728C1.51157 10.5 1.83827 10.5 2.49167 10.5Z"
+              stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Стиль • Уверенность • Характер</p>
+      <h1>Ваш стиль —<br><em>наше дело.</em></h1>
+      <p class="hero__text">Выберите удобное время и получите лучший опыт в барбершопе.</p>
+      <a href="#agendar" class="btn btn--gold">Записаться онлайн <img class="icon" src="./icons/calendar-dark.svg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<!-- ЗАПИСЬ -->
+<section class="container" id="agendar">
+  <div class="booking">
+    <div class="booking__head">
+      <h2>Онлайн-запись</h2>
+      <div class="hours">
+        <img class="icon icon--lg" src="./icons/clock.svg" alt="">
+        <div><small>Режим работы</small>Пн–Сб: 09:00–20:00</div>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li class="step is-active"><span>1</span><div>Услуга<small>Выберите услугу</small></div></li>
+      <li class="step"><span>2</span><div>Барбер<small>Выберите мастера</small></div></li>
+      <li class="step"><span>3</span><div>Дата и время<small>Выберите дату и время</small></div></li>
+      <li class="step"><span>4</span><div>Подтверждение<small>Проверьте запись</small></div></li>
+    </ol>
+
+    <div class="booking__grid">
+      <!-- Услуги -->
+      <div class="col">
+        <h3><img class="icon" src="./icons/scissors.svg" alt="">Выберите услугу</h3>
+        <div class="options" id="services">
+          <button class="option is-selected" data-name="Мужская стрижка" data-price="1500" data-duration="30 мин"><span>Мужская стрижка<b>1 500 ₽</b></span></button>
+          <button class="option" data-name="Борода" data-price="1000" data-duration="20 мин"><span>Борода<b>1 000 ₽</b></span></button>
+          <button class="option" data-name="Стрижка + борода" data-price="2300" data-duration="50 мин"><span>Стрижка + борода<b>2 300 ₽</b></span></button>
+          <button class="option" data-name="Оформление бровей" data-price="500" data-duration="15 мин"><span>Оформление бровей<b>500 ₽</b></span></button>
+          <button class="option" data-name="Стрижка + борода + брови" data-price="2700" data-duration="65 мин"><span>Стрижка + борода + брови<b>2 700 ₽</b></span></button>
+        </div>
+        <p class="note"><img class="icon" src="./icons/info.svg" alt="">В каждую услугу входит горячее полотенце и укладка.</p>
+      </div>
+
+      <!-- Барберы -->
+      <div class="col">
+        <h3><img class="icon" src="./icons/personal.svg" alt="">Выберите барбера</h3>
+        <div class="options" id="barbers">
+          <button class="option option--barber is-selected" data-name="Алексей Громов">
+            <img src="./image/barber1.jpg" alt="" class="avatar"><span>Алексей Громов<small>★ 4.9</small></span></button>
+          <button class="option option--barber" data-name="Дмитрий Орлов">
+            <img src="./image/barber2.jpg" alt="" class="avatar"><span>Дмитрий Орлов<small>★ 4.8</small></span></button>
+          <button class="option option--barber" data-name="Артём Лебедев">
+            <img src="./image/barber3.jpg" alt="" class="avatar"><span>Артём Лебедев<small>★ 4.9</small></span></button>
+          <button class="option option--barber" data-name="Максим Волков">
+            <img src="./image/barber4.jpg" alt="" class="avatar"><span>Максим Волков<small>★ 4.7</small></span></button>
+        </div>
+        <a href="#barbeiros" class="more">Все барберы <span>›</span></a>
+      </div>
+
+      <!-- Дата и время -->
+      <div class="col">
+        <h3><img class="icon" src="./icons/calendar-add-data.svg" alt="">Выберите дату</h3>
+        <div class="calendar">
+          <div class="calendar__head">
+            <button id="prev" aria-label="Предыдущий месяц">‹</button>
+            <span id="monthLabel"></span>
+            <button id="next" aria-label="Следующий месяц">›</button>
+          </div>
+          <div class="calendar__grid" id="calendar"></div>
+        </div>
+        <h4>Выберите время</h4>
+        <div class="times" id="times">
+          <button>09:00</button><button>10:00</button><button>11:00</button>
+          <button>14:00</button><button>15:00</button><button class="is-selected">16:00</button>
+          <button>17:00</button><button>18:00</button><button>19:00</button>
+        </div>
+      </div>
+
+      <!-- Итог -->
+      <div class="col">
+        <h3><img class="icon" src="./icons/file.svg" alt="">Ваша запись</h3>
+        <dl class="summary">
+          <div><dt>Услуга</dt><dd><span id="sService"></span><span id="sPrice"></span></dd></div>
+          <div><dt>Барбер</dt><dd id="sBarber"></dd></div>
+          <div><dt>Дата</dt><dd id="sDate"></dd></div>
+          <div><dt>Время</dt><dd id="sTime"></dd></div>
+          <div><dt>Длительность</dt><dd id="sDuration"></dd></div>
+        </dl>
+        <div class="total"><span>Итого</span><b id="sTotal"></b></div>
+        <button class="btn btn--gold btn--block" id="confirm">Подтвердить запись</button>
+        <p class="error" id="bookError" hidden></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="container" id="servicos">
+  <div class="features">
+    <div class="feature"><img class="icon icon--xl" src="./icons/clock-check.svg" alt=""><div><b>Быстрая запись</b><p>Выберите время в несколько кликов.</p></div></div>
+    <div class="feature"><img class="icon icon--xl" src="./icons/sertificate.svg" alt=""><div><b>Опытные мастера</b><p>Барберы с большим стажем и безупречным результатом.</p></div></div>
+    <div class="feature"><img class="icon icon--xl" src="./icons/comfortable.svg" alt=""><div><b>Атмосфера</b><p>Комфорт и качество, которых вы достойны.</p></div></div>
+    <div class="feature"><img class="icon icon--xl" src="./icons/card.svg" alt=""><div><b>Удобная оплата</b><p>Наличные, банковские карты и СБП.</p></div></div>
+  </div>
+</section>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer" id="contato">
+  <div class="container footer__grid">
+    <div>
+      <a href="#" class="logo"><img src="./icons/logo-barber.svg" alt="" class="logo__img"></a>
+      <p class="footer__about">Больше, чем стрижка. Стиль, характер и качество в каждой детали.</p>
+      <div class="socials">
+        <a href="#" aria-label="VK"><img class="icon" src="./icons/vk.svg" alt=""></a>
+        <a href="#" aria-label="Whatsapp"><img class="icon" src="./icons/whatsapp.svg" alt=""></a>
+        <a href="#" aria-label="Telegram"><img class="icon" src="./icons/tg.svg" alt=""></a>
+      </div>
+    </div>
+    <div><h5>Навигация</h5><a href="#inicio">Главная</a><a href="#servicos">Услуги</a><a href="#barbeiros">Барберы</a><a href="#galeria">Галерея</a><a href="#contato">Контакты</a></div>
+    <div><h5>Услуги</h5><a href="#">Мужская стрижка</a><a href="#">Борода</a><a href="#">Стрижка + борода</a><a href="#">Оформление бровей</a><a href="#">Другие услуги</a></div>
+    <div><h5>Контакты</h5>
+      <p class="contact"><img class="icon" src="./icons/phone.svg" alt="">+7 (999) 999-99-99</p>
+      <p class="contact"><img class="icon" src="./icons/mail.svg" alt="">info@barbershop.ru</p>
+      <p class="contact"><img class="icon" src="./icons/geo.svg" alt="">г. Москва, ул. Звёздная, 123</p>
+    </div>
+    <div><h5>Режим работы</h5><p>Пн–Пт<br>09:00–20:00</p><p>Суббота<br>09:00–18:00</p><p>Воскресенье<br>Выходной</p></div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Барбершоп «EXCLUSIVA». Все права защищены.</span>
+    <span>Салават</span>
+  </div>
+</footer>
+
+<!-- ОКНО ПОДТВЕРЖДЕНИЯ ЗАПИСИ -->
+<div class="overlay" id="bookModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookTitle">
+    <button class="modal__close" id="bookClose" aria-label="Закрыть">×</button>
+    <h2 id="bookTitle">Подтверждение записи</h2>
+
+    <dl class="summary">
+      <div><dt>Услуга</dt><dd id="mService"></dd></div>
+      <div><dt>Барбер</dt><dd id="mBarber"></dd></div>
+      <div><dt>Дата и время</dt><dd id="mDateTime"></dd></div>
+      <div><dt>Стоимость</dt><dd id="mPrice"></dd></div>
+    </dl>
+
+    <form id="bookForm" novalidate>
+      <label class="field">Имя и фамилия <span>необязательно</span>
+        <input type="text" id="clientName" autocomplete="name" placeholder="Иван Петров">
+      </label>
+      <label class="field">Номер телефона
+        <input type="tel" id="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+      </label>
+      <p class="error" id="phoneError" hidden>Введите номер телефона полностью</p>
+      <button type="submit" class="btn btn--gold btn--block">Записаться</button>
+      <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+    </form>
+
+    <div class="done" id="bookDone" hidden>
+      <img class="icon icon--xl" src="./icons/apply.svg" alt="">
+      <p id="doneText">Ждём вас!</p>
+      <button class="btn btn--outline" id="doneClose">Закрыть</button>
+    </div>
+
+    <p class="call-note">Позвоните заранее для отмены записи: <a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
